@@ -7,23 +7,33 @@
 
 import UIKit
 
-class CurrentTimeViewController: UIViewController {
+final class CurrentTimeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction private func alarmButtonDidTapped(_ sender: Any) {
+        pushContainerVC("アラーム", 0)
     }
-    */
+    
+    @IBAction private func stopwatchButtonDidTapped(_ sender: Any) {
+        pushContainerVC("ストップウォッチ", 1)
 
+    }
+    
+    @IBAction private func timerButtonDidTapped(_ sender: Any) {
+        pushContainerVC("タイマー", 2)
+    }
+    
+    private func pushContainerVC(_ title: String, _ index: Int) {
+        let containerVC = storyboard?.instantiateViewController(
+            withIdentifier: "ContainerViewController"
+        ) as! ContainerViewController
+        containerVC.modalPresentationStyle = .fullScreen
+        containerVC.navTitle = title
+        containerVC.index = index
+        self.navigationController?.pushViewController(containerVC, animated: true)
+    }
+    
 }

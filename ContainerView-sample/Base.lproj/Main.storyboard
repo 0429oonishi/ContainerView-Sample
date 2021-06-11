@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rbe-YB-P8V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ji8-iX-MrR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,90 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-hI-y1n">
-                                <rect key="frame" x="100" y="44" width="214" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ZmA-lb-IP4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="次へ"/>
-                                <connections>
-                                    <action selector="nextButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGb-Hz-Phi"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKf-JV-z90">
-                                <rect key="frame" x="100" y="114" width="214" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-ng-rOn">
-                                <rect key="frame" x="30" y="178" width="354" height="654"/>
-                                <connections>
-                                    <segue destination="JfS-z8-ilv" kind="embed" identifier="segue" id="5QR-oJ-N4b"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                        <constraints>
-                            <constraint firstItem="kkh-ng-rOn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3Ld-IT-K4S"/>
-                            <constraint firstItem="4cu-hI-y1n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="DGk-gq-oDy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkh-ng-rOn" secondAttribute="trailing" constant="30" id="JhA-Tv-DEA"/>
-                            <constraint firstItem="MKf-JV-z90" firstAttribute="top" secondItem="4cu-hI-y1n" secondAttribute="bottom" constant="20" id="Tpb-SQ-qxb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKf-JV-z90" secondAttribute="trailing" constant="100" id="UvN-GB-eg1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4cu-hI-y1n" secondAttribute="trailing" constant="100" id="kv5-X7-Lii"/>
-                            <constraint firstItem="4cu-hI-y1n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oDK-1h-vd6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kkh-ng-rOn" secondAttribute="bottom" constant="30" id="qsb-4b-kL6"/>
-                            <constraint firstItem="kkh-ng-rOn" firstAttribute="top" secondItem="MKf-JV-z90" secondAttribute="bottom" constant="30" id="xkr-sL-TYo"/>
-                            <constraint firstItem="MKf-JV-z90" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zqa-rN-DHm"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="textField" destination="MKf-JV-z90" id="eJS-CM-5D8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
-        </scene>
-        <!--Container View Controller-->
-        <scene sceneID="LAu-HQ-IFF">
-            <objects>
-                <viewController id="JfS-z8-ilv" customClass="ContainerViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cTM-3q-QsF">
-                        <rect key="frame" x="0.0" y="0.0" width="354" height="654"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここに値が入る" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-Yw-1mX">
-                                <rect key="frame" x="70.5" y="309" width="213" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fdS-Jq-DSg"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                        <constraints>
-                            <constraint firstItem="WQq-Yw-1mX" firstAttribute="centerX" secondItem="cTM-3q-QsF" secondAttribute="centerX" id="19g-rN-6Wq"/>
-                            <constraint firstItem="WQq-Yw-1mX" firstAttribute="centerY" secondItem="cTM-3q-QsF" secondAttribute="centerY" id="iRL-5W-cVv"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="label" destination="WQq-Yw-1mX" id="8Kx-sb-Acf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7gj-ki-ywf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="823" y="94"/>
-        </scene>
         <!--Top View Controller-->
         <scene sceneID="i5f-fy-7Eo">
             <objects>
@@ -224,6 +140,156 @@
             </objects>
             <point key="canvasLocation" x="2357" y="241"/>
         </scene>
+        <!--現在時刻-->
+        <scene sceneID="TS4-3p-CMh">
+            <objects>
+                <viewController id="5nZ-mM-dSd" customClass="CurrentTimeViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wbd-fO-t73">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在時刻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQU-Q7-T6A">
+                                <rect key="frame" x="146.5" y="430" width="121.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ah2-Sc-0QD">
+                                <rect key="frame" x="7.5" y="496" width="399" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPt-l2-igt">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
+                                        <state key="normal" title="アラーム"/>
+                                        <connections>
+                                            <action selector="alarmButtonDidTapped:" destination="5nZ-mM-dSd" eventType="touchUpInside" id="DQs-Qf-gKA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaI-cc-lks">
+                                        <rect key="frame" x="138" y="0.0" width="123" height="30"/>
+                                        <state key="normal" title="ストップウォッチ"/>
+                                        <connections>
+                                            <action selector="stopwatchButtonDidTapped:" destination="5nZ-mM-dSd" eventType="touchUpInside" id="Yus-0d-5SK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewl-e9-Rxk">
+                                        <rect key="frame" x="276" y="0.0" width="123" height="30"/>
+                                        <state key="normal" title="タイマー"/>
+                                        <connections>
+                                            <action selector="timerButtonDidTapped:" destination="5nZ-mM-dSd" eventType="touchUpInside" id="ykH-Dk-xQV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o1L-7D-a2f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WQU-Q7-T6A" firstAttribute="centerX" secondItem="Wbd-fO-t73" secondAttribute="centerX" id="3wO-7f-bsD"/>
+                            <constraint firstItem="Ah2-Sc-0QD" firstAttribute="centerX" secondItem="Wbd-fO-t73" secondAttribute="centerX" id="4kc-wD-UF3"/>
+                            <constraint firstItem="Ah2-Sc-0QD" firstAttribute="top" secondItem="WQU-Q7-T6A" secondAttribute="bottom" constant="30" id="RKw-TU-gbf"/>
+                            <constraint firstItem="WQU-Q7-T6A" firstAttribute="centerY" secondItem="Wbd-fO-t73" secondAttribute="centerY" id="iz7-OQ-fQa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="現在時刻" id="lMo-Lc-nk2"/>
+                    <connections>
+                        <segue destination="jwC-iG-hHe" kind="show" id="vvR-r5-8xM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2OP-x7-7Ti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3989.8550724637685" y="69.642857142857139"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="ps6-e3-afN">
+            <objects>
+                <viewController storyboardIdentifier="ContainerViewController" id="jwC-iG-hHe" customClass="ContainerViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lNX-1o-k6B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-uy-YYW">
+                                <rect key="frame" x="0.0" y="129" width="414" height="767"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkT-6Y-0kh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                                        <connections>
+                                            <segue destination="Cq5-75-H5S" kind="embed" identifier="alarmSegueID" id="Qnc-71-swZ"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-AA-mir">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                                        <connections>
+                                            <segue destination="MgL-wj-p8Y" kind="embed" identifier="stopwatchSegueID" id="aFn-TB-qPm"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmt-ea-7dC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                                        <connections>
+                                            <segue destination="pmI-gQ-jSr" kind="embed" identifier="timerSegueID" id="0AP-Qq-ahe"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vmt-ea-7dC" secondAttribute="bottom" id="9PG-e9-uRT"/>
+                                    <constraint firstItem="vmt-ea-7dC" firstAttribute="top" secondItem="Rh4-uy-YYW" secondAttribute="top" id="EYd-TL-wLK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fvb-AA-mir" secondAttribute="bottom" id="F2R-C8-OtP"/>
+                                    <constraint firstAttribute="bottom" secondItem="mkT-6Y-0kh" secondAttribute="bottom" id="GTi-pY-oTQ"/>
+                                    <constraint firstItem="mkT-6Y-0kh" firstAttribute="leading" secondItem="Rh4-uy-YYW" secondAttribute="leading" id="HnP-rZ-hdl"/>
+                                    <constraint firstItem="Fvb-AA-mir" firstAttribute="leading" secondItem="Rh4-uy-YYW" secondAttribute="leading" id="JMQ-sK-HMu"/>
+                                    <constraint firstItem="mkT-6Y-0kh" firstAttribute="top" secondItem="Rh4-uy-YYW" secondAttribute="top" id="Jur-Mw-x5z"/>
+                                    <constraint firstItem="Fvb-AA-mir" firstAttribute="top" secondItem="Rh4-uy-YYW" secondAttribute="top" id="Nzk-tp-eiq"/>
+                                    <constraint firstItem="vmt-ea-7dC" firstAttribute="leading" secondItem="Rh4-uy-YYW" secondAttribute="leading" id="Sil-Vl-x8O"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fvb-AA-mir" secondAttribute="trailing" id="iqF-Yr-vYR"/>
+                                    <constraint firstAttribute="trailing" secondItem="vmt-ea-7dC" secondAttribute="trailing" id="u8s-2a-aA4"/>
+                                    <constraint firstAttribute="trailing" secondItem="mkT-6Y-0kh" secondAttribute="trailing" id="vKZ-Of-7up"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="AWP-Gq-bI1">
+                                <rect key="frame" x="107" y="98" width="200" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Evl-Ab-EaD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="alarm" catalog="system"/>
+                                    <segment title="" image="stopwatch" catalog="system"/>
+                                    <segment title="" image="timer" catalog="system"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentDidTapped:" destination="jwC-iG-hHe" eventType="valueChanged" id="rF3-uO-bkq"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zWw-3a-UfQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rh4-uy-YYW" firstAttribute="top" secondItem="AWP-Gq-bI1" secondAttribute="bottom" id="3zg-4g-j8d"/>
+                            <constraint firstAttribute="bottom" secondItem="Rh4-uy-YYW" secondAttribute="bottom" id="M28-VV-q51"/>
+                            <constraint firstItem="AWP-Gq-bI1" firstAttribute="top" secondItem="zWw-3a-UfQ" secondAttribute="top" constant="10" id="RhM-Re-BRC"/>
+                            <constraint firstItem="Rh4-uy-YYW" firstAttribute="trailing" secondItem="zWw-3a-UfQ" secondAttribute="trailing" id="akU-oy-SKC"/>
+                            <constraint firstItem="AWP-Gq-bI1" firstAttribute="centerX" secondItem="lNX-1o-k6B" secondAttribute="centerX" id="emZ-wY-b5s"/>
+                            <constraint firstItem="Rh4-uy-YYW" firstAttribute="leading" secondItem="zWw-3a-UfQ" secondAttribute="leading" id="pvr-Qt-8NX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ibD-yh-Sa7">
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="oab-t5-K2c">
+                            <connections>
+                                <action selector="backButtonDidTapped:" destination="jwC-iG-hHe" id="EqL-ii-Byc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alarmContainer" destination="mkT-6Y-0kh" id="QLT-RD-ksV"/>
+                        <outlet property="containerView" destination="Rh4-uy-YYW" id="j4F-5V-N9i"/>
+                        <outlet property="segmentedControl" destination="AWP-Gq-bI1" id="Tqf-2X-zke"/>
+                        <outlet property="stopwatchContainer" destination="Fvb-AA-mir" id="qI4-9l-H1u"/>
+                        <outlet property="timerContainer" destination="vmt-ea-7dC" id="npZ-jc-Lli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJP-r2-nwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4739" y="70"/>
+        </scene>
         <!--Red View Controller-->
         <scene sceneID="OWW-GX-hyN">
             <objects>
@@ -266,8 +332,107 @@
             </objects>
             <point key="canvasLocation" x="2357" y="-92"/>
         </scene>
+        <!--Alarm View Controller-->
+        <scene sceneID="Zfn-On-tFK">
+            <objects>
+                <viewController id="Cq5-75-H5S" customClass="AlarmViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h3I-Nc-d8u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アラーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mG-ba-7wy">
+                                <rect key="frame" x="126.5" y="359.5" width="161" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0mG-ba-7wy" firstAttribute="centerX" secondItem="h3I-Nc-d8u" secondAttribute="centerX" id="Nbm-K6-bb5"/>
+                            <constraint firstItem="0mG-ba-7wy" firstAttribute="centerY" secondItem="h3I-Nc-d8u" secondAttribute="centerY" id="mgt-Bv-dUD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uue-9A-9gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5750.7246376811599" y="-327.12053571428572"/>
+        </scene>
+        <!--Stopwatch View Controller-->
+        <scene sceneID="teH-Y8-8LX">
+            <objects>
+                <viewController id="MgL-wj-p8Y" customClass="StopwatchViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YtO-9C-j6D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ストップウォッチ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEg-MH-PqP">
+                                <rect key="frame" x="46" y="359.5" width="322" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iEg-MH-PqP" firstAttribute="centerX" secondItem="YtO-9C-j6D" secondAttribute="centerX" id="Uw3-MH-VuS"/>
+                            <constraint firstItem="iEg-MH-PqP" firstAttribute="centerY" secondItem="YtO-9C-j6D" secondAttribute="centerY" id="hS3-Ja-cqx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4P-b3-U2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6537.68115942029" y="11.71875"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="ABj-i6-uc4">
+            <objects>
+                <viewController id="pmI-gQ-jSr" customClass="TimerViewController" customModule="ContainerView_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n8e-Vr-hOY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイマー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQH-sl-CwW">
+                                <rect key="frame" x="126.5" y="359.5" width="161" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZQH-sl-CwW" firstAttribute="centerX" secondItem="n8e-Vr-hOY" secondAttribute="centerX" id="JuS-Iw-KXx"/>
+                            <constraint firstItem="ZQH-sl-CwW" firstAttribute="centerY" secondItem="n8e-Vr-hOY" secondAttribute="centerY" id="Rv4-2m-c8c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHt-Z5-B0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5750.7246376811599" y="426.89732142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dfz-Yo-jik">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ji8-iX-MrR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bt9-Le-xnH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5nZ-mM-dSd" kind="relationship" relationship="rootViewController" id="9gX-aZ-5mM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOt-Mo-cm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3265" y="70"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="alarm" catalog="system" width="124" height="128"/>
+        <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

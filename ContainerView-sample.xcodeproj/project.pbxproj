@@ -9,29 +9,35 @@
 /* Begin PBXBuildFile section */
 		AB4D6BCC2672EB5B00E5286E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6BCB2672EB5B00E5286E /* AppDelegate.swift */; };
 		AB4D6BCE2672EB5B00E5286E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6BCD2672EB5B00E5286E /* SceneDelegate.swift */; };
-		AB4D6BD02672EB5B00E5286E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6BCF2672EB5B00E5286E /* ViewController.swift */; };
 		AB4D6BD32672EB5B00E5286E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6BD12672EB5B00E5286E /* Main.storyboard */; };
 		AB4D6BD52672EB5F00E5286E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6BD42672EB5F00E5286E /* Assets.xcassets */; };
 		AB4D6BD82672EB5F00E5286E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6BD62672EB5F00E5286E /* LaunchScreen.storyboard */; };
-		AB4D6BE02672EC2A00E5286E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6BDF2672EC2A00E5286E /* ContainerViewController.swift */; };
 		ABAFB55B267311240095415F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB55A267311240095415F /* TopViewController.swift */; };
 		ABAFB55D267311F80095415F /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB55C267311F80095415F /* RedViewController.swift */; };
 		ABAFB55F267312010095415F /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB55E267312010095415F /* BlueViewController.swift */; };
+		ABAFB565267337DF0095415F /* CurrentTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB564267337DF0095415F /* CurrentTimeViewController.swift */; };
+		ABAFB567267337E70095415F /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB566267337E70095415F /* AlarmViewController.swift */; };
+		ABAFB569267337EC0095415F /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB568267337EC0095415F /* StopwatchViewController.swift */; };
+		ABAFB56B267337F10095415F /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB56A267337F10095415F /* TimerViewController.swift */; };
+		ABAFB56E2673388E0095415F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAFB56D2673388E0095415F /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB4D6BC82672EB5B00E5286E /* ContainerView-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ContainerView-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4D6BCB2672EB5B00E5286E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4D6BCD2672EB5B00E5286E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB4D6BCF2672EB5B00E5286E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB4D6BD22672EB5B00E5286E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB4D6BD42672EB5F00E5286E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4D6BD72672EB5F00E5286E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB4D6BD92672EB5F00E5286E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB4D6BDF2672EC2A00E5286E /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		ABAFB55A267311240095415F /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		ABAFB55C267311F80095415F /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		ABAFB55E267312010095415F /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		ABAFB564267337DF0095415F /* CurrentTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeViewController.swift; sourceTree = "<group>"; };
+		ABAFB566267337E70095415F /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		ABAFB568267337EC0095415F /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		ABAFB56A267337F10095415F /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		ABAFB56D2673388E0095415F /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +70,10 @@
 		AB4D6BCA2672EB5B00E5286E /* ContainerView-sample */ = {
 			isa = PBXGroup;
 			children = (
+				AB4D6BD12672EB5B00E5286E /* Main.storyboard */,
+				ABAFB56C267337FC0095415F /* Time */,
 				AB4D6BCB2672EB5B00E5286E /* AppDelegate.swift */,
 				AB4D6BCD2672EB5B00E5286E /* SceneDelegate.swift */,
-				AB4D6BD12672EB5B00E5286E /* Main.storyboard */,
-				AB4D6BCF2672EB5B00E5286E /* ViewController.swift */,
-				AB4D6BDF2672EC2A00E5286E /* ContainerViewController.swift */,
 				ABAFB55A267311240095415F /* TopViewController.swift */,
 				ABAFB55C267311F80095415F /* RedViewController.swift */,
 				ABAFB55E267312010095415F /* BlueViewController.swift */,
@@ -77,6 +82,18 @@
 				AB4D6BD92672EB5F00E5286E /* Info.plist */,
 			);
 			path = "ContainerView-sample";
+			sourceTree = "<group>";
+		};
+		ABAFB56C267337FC0095415F /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFB564267337DF0095415F /* CurrentTimeViewController.swift */,
+				ABAFB56D2673388E0095415F /* ContainerViewController.swift */,
+				ABAFB566267337E70095415F /* AlarmViewController.swift */,
+				ABAFB568267337EC0095415F /* StopwatchViewController.swift */,
+				ABAFB56A267337F10095415F /* TimerViewController.swift */,
+			);
+			path = Time;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +168,13 @@
 			files = (
 				ABAFB55F267312010095415F /* BlueViewController.swift in Sources */,
 				ABAFB55B267311240095415F /* TopViewController.swift in Sources */,
-				AB4D6BD02672EB5B00E5286E /* ViewController.swift in Sources */,
+				ABAFB56E2673388E0095415F /* ContainerViewController.swift in Sources */,
+				ABAFB569267337EC0095415F /* StopwatchViewController.swift in Sources */,
+				ABAFB565267337DF0095415F /* CurrentTimeViewController.swift in Sources */,
 				AB4D6BCC2672EB5B00E5286E /* AppDelegate.swift in Sources */,
+				ABAFB567267337E70095415F /* AlarmViewController.swift in Sources */,
 				ABAFB55D267311F80095415F /* RedViewController.swift in Sources */,
-				AB4D6BE02672EC2A00E5286E /* ContainerViewController.swift in Sources */,
+				ABAFB56B267337F10095415F /* TimerViewController.swift in Sources */,
 				AB4D6BCE2672EB5B00E5286E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
